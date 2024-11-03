@@ -1,0 +1,38 @@
+.background-container {
+  order: 1;
+  align-content: center;
+  align-items: center;
+  background: linear-gradient(
+    220deg,
+    rgba(255, 255, 255, 0) 60.05382521119378%,
+    hsl(0, 0%, 0%) 120.0062716057621%
+  );
+  display: flex;
+  height: 100vh;
+  left: 0;
+  padding: 0;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 2;
+}
+
+.background-content-container {
+  flex: none;
+  height: 100vh;
+  pointer-events: none;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  background-size: 256px;
+  background-repeat: repeat;
+  background-image: url("/images/background/noise.png");
+  opacity: 0.15;
+  border-radius: 0;
+}
