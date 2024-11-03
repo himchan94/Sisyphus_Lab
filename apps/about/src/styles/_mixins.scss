@@ -1,0 +1,31 @@
+// _mixins.scss
+@import "./variables";
+
+@mixin flex($justify: center, $align: center, $direction: row) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+@mixin grid($columns: 12, $gap: 1rem) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  gap: $gap;
+}
+
+@mixin media($size) {
+  @if $size == sm {
+    @media (max-width: $screen-sm) {
+      @content;
+    }
+  } @else if $size == md {
+    @media (max-width: $screen-md) {
+      @content;
+    }
+  } @else if $size == lg {
+    @media (max-width: $screen-lg) {
+      @content;
+    }
+  }
+}
