@@ -4,7 +4,10 @@ $gray10: #1a1a1a;
 $gray20: #333333;
 $gray70: #b3b3b3;
 
-$font-family: bigShouldersDisplay;
+$BigShouldersDisplay: var(--font-big-shoulders-display);
+$JetBrainsMono: var(--font-jetbrains-mono);
+$D2: var(--font-d2);
+
 $font-size-base: 16px;
 $line-height-base: 1.5;
 

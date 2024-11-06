@@ -23,6 +23,7 @@ export const BigShouldersDisplay = localFont({
       style: "normal",
     },
   ],
+  variable: "--font-big-shoulders-display",
 });
 
 export const JetBrainsMono = localFont({
@@ -48,6 +49,7 @@ export const JetBrainsMono = localFont({
       style: "normal",
     },
   ],
+  variable: "--font-jetbrains-mono",
 });
 
 export const D2 = localFont({
@@ -63,4 +65,5 @@ export const D2 = localFont({
       style: "normal",
     },
   ],
+  variable: "--font-d2",
 });

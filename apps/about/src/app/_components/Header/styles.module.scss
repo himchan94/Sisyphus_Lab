@@ -1,0 +1,30 @@
+@use "@/styles/module";
+
+.header {
+  @include module.mixin-flex(center, center, row);
+  padding: 48px;
+
+  @include module.mixin-media(md) {
+    padding: 36px;
+  }
+
+  @include module.mixin-media(sm) {
+    padding: 24px;
+  }
+
+  .nav {
+    width: 100%;
+
+    .navList {
+      @include module.mixin-flex(space-between, center, row);
+    }
+
+    .navItem {
+      @include module.mixin-typography(body);
+    }
+
+    .current {
+      color: module.$variable-white;
+    }
+  }
+}

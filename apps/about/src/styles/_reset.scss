@@ -116,3 +116,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+a {
+  text-decoration: none; /* Removes underline */
+  color: inherit; /* Inherits color from the parent element */
+  cursor: pointer; /* Adds pointer cursor for clickability */
+}

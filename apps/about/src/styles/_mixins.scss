@@ -29,3 +29,76 @@
     }
   }
 }
+
+@mixin typography($type) {
+  @if $type == heading1 {
+    font-family: $BigShouldersDisplay;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 1.2;
+    letter-spacing: -0.04;
+    color: $white;
+
+    @include media(md) {
+      font-size: 72px;
+    }
+
+    @include media(sm) {
+      font-size: 60px;
+    }
+  } @else if $type == heading2 {
+    font-family: $BigShouldersDisplay;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 1;
+    color: $black;
+
+    @include media(md) {
+      font-size: 48px;
+    }
+
+    @include media(sm) {
+      font-size: 36px;
+    }
+  } @else if $type == heading3 {
+    font-family: $BigShouldersDisplay;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 1.4;
+    color: $gray10;
+  } @else if $type == body {
+    font-family: $D2;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 2;
+    color: $gray70;
+
+    @include media(md) {
+      font-size: 14px;
+    }
+
+    @include media(sm) {
+      font-size: 12px;
+    }
+  } @else if $type == span {
+    font-family: $BigShouldersDisplay;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 1.4;
+    color: $white;
+  } @else if $type == menuLink {
+    font-family: $D2;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.2;
+    color: $gray70;
+
+    @include media(md) {
+      font-size: 24px;
+    }
+
+    @include media(sm) {
+      font-size: 18zpx;
+    }
+  }
+}
